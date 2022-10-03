@@ -14,9 +14,16 @@ const MainContainer = () => {
             .then(data => setExercises(data))
     }, [])
         return (
-            <div>
+            <div className='ExerciseList-container' >
                 {
-                    exercises.map(Exercise => <ExerciseList key={Exercise.id} img={Exercise.img} name={Exercise.name}></ExerciseList>)
+                    exercises.map(Exercise => <ExerciseList
+                        key={Exercise.id}
+                        img={Exercise.img}
+                        name={Exercise.name}
+                        level={Exercise.level}
+                        time={Exercise.time}
+                        about = {Exercise.about}
+                    ></ExerciseList>)
                 }
                 
             </div>
@@ -31,10 +38,9 @@ const MainContainer = () => {
                     <FontAwesomeIcon icon={faDumbbell} className='Fw-icon'></FontAwesomeIcon>
                     <h1>Fitness Strength Gym</h1>
                 </div>
+                <p>Today's exercise plan is: </p>
                 <div>
-                    <p>Today's exercise plan is: </p>
                     <LoadExercises></LoadExercises>
-                    <ExerciseList></ExerciseList>
                 </div>
             </div>
             <div className='Profile-container'>
