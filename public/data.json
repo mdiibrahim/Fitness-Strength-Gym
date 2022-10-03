@@ -1,0 +1,50 @@
+[
+    {
+        "img": "images/arms_standing_barbell_curl rsz.png",
+        "name": "Arms Standing Barbell Curl",
+        "level": "Beginner",
+        "time": 90,
+        "about": "The barbell curl targets your biceps brachii muscle as well as the brachialis, a muscle responsible for elbow flexion. With regular practice, barbell curls can help you build bigger biceps. Barbell curls generally allow you to lift heavier weight than dumbbell curls.",
+        "id": "633ad1ad722b1e2c12b7a925"
+    },
+    {
+        "img": "images/back_deadlift rsz.png",
+        "name": "Back Deadlift",
+        "level": "Pro",
+        "time": 30,
+        "about": "The deadlift is a compound exercise that works many muscles in your body. It's an excellent way to improve strength, boost your cardiovascular fitness and improve flexibility. Deadlifts are performed with a barbell, dumbbells or kettlebells. The weight is lifted from a dead stop on the floor to the standing position.",
+        "id": "633ad1ad118725849718c6ee"
+    },
+    {
+        "img": "images/back_pullups rsz.png",
+        "name": "Back Pullups",
+        "level": "Beginner",
+        "time": 30,
+        "about": "Pull ups are one of the best and simplest ways to build your back. Pullups work the following muscles of the back: Latissimus dorsi: largest upper back muscle that runs from the mid-back to under the armpit and shoulder blade. Trapezius: located from your neck out to both shoulders.",
+        "id": "633ad1ad801c6b48f2dce586"
+    },
+    {
+        "img": "images/chest_barbell_bench_press rsz.png",
+        "name": "Chest Barbell Bench Press",
+        "level": "Intermediate",
+        "time": 40,
+        "about": "Bench presses can be an effective exercise for building up chest, arm, and shoulder muscles. The barbell bench press is a classic exercise popular among all weight lifting circles. From bodybuilders to powerlifters, the bench press is a staple chest exercise in nearly every workout program. ",
+        "id": "633ad1ad8a8c16d097f75044"
+    },
+    {
+        "img": "images/chest_cable_crossover rsz.png",
+        "name": "Chest Cable Crossover",
+        "level": "Intermediate",
+        "time": 60,
+        "about": "Cable crossovers are excellent for targeting the lower area of the pectorals because of the plane of motion in which they move through. Additionally, they allow for a powerful stretch at the top and a solid peak contraction at the bottom, each of which can help ignite growth.",
+        "id": "633ad1adbeb9f0818a135e57"
+    },
+    {
+        "img": "images/core_cable_woodchop rsz.png",
+        "name": "Core Cable Woodchop",
+        "level": "Beginner",
+        "time": 60,
+        "about": "The cable wood chop exercise uses a cable machine to simulate a wood-chopping action, building strength and power in the core and obliques. To make it more effective, perform it slowly and with control. This exercise is a good addition to a core strengthening or total body workout.",
+        "id": "633ad1ad615cb629a5a688b0"
+    }
+]
