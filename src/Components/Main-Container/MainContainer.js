@@ -5,14 +5,14 @@ import './MainContainer.css'
 import ExerciseList from './ExerciseList/ExerciseList';
 
 const MainContainer = () => {
-    
+
     const LoadExercises = () => {
         const [exercises, setExercises] = useState([]);
-    useEffect(() => {
-        fetch('data.json')
-            .then(res => res.json())
-            .then(data => setExercises(data))
-    }, [])
+        useEffect(() => {
+            fetch('data.json')
+                .then(res => res.json())
+                .then(data => setExercises(data))
+        }, [])
         return (
             <div className='ExerciseList-container' >
                 {
@@ -22,26 +22,25 @@ const MainContainer = () => {
                         name={Exercise.name}
                         level={Exercise.level}
                         time={Exercise.time}
-                        about = {Exercise.about}
+                        about={Exercise.about}
                     ></ExerciseList>)
                 }
-                
+
             </div>
-    
+
         )
     }
     return (
         <div className='Main-container'>
             <div className='Exercise-container'>
-                
+
                 <div className='Title'>
                     <FontAwesomeIcon icon={faDumbbell} className='Fw-icon'></FontAwesomeIcon>
                     <h1>Fitness Strength Gym</h1>
                 </div>
-                <p>Today's exercise plan is: </p>
-                <div>
+
+                    <p>Today's exercise plan is: </p>
                     <LoadExercises></LoadExercises>
-                </div>
             </div>
             <div className='Profile-container'>
                 <p>hello</p>

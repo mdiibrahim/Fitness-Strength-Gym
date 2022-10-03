@@ -18,4 +18,21 @@
 .ExerciseList-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+@media screen and (max-width: 600px){
+    .ExerciseList-container{
+        display: grid;
+        width: 100vw;
+        grid-template-columns: 1fr;
+        
+    }
+}
+ @media screen and ( min-width: 601px) and  (max-width:1200px){
+    .ExerciseList-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;    
+    }
 }

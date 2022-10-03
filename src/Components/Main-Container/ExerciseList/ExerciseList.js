@@ -1,18 +1,24 @@
 import React from 'react';
 import './ExerciseList.css';
 
-const ExerciseList = ({ name, img, level,time,about }) => {
+const ExerciseList = ({ name, img, level, time, about }) => {
 
     return (
-        <div>
+        <div className='Exercise'>
+
             <img src={img} alt="" />
-            <div>
+
+
+            <div className='Excercise-info'>
                 <h3>{name}</h3>
                 <p>{about}</p>
                 <p>Level: {level}</p>
                 <p>Time: {time}s</p>
-                <button className='btn-do'>Do It</button>
+
             </div>
+            
+                <button className='btn-do'>Do It</button>
+            
         </div>
     );
 };
