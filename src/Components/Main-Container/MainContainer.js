@@ -2,8 +2,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import './MainContainer.css'
+import ExerciseList from '../ExerciseList/ExerciseList';
 
 const MainContainer = () => {
+    const Exercises = [
+        {
+            img: 'arms_standing_barbell_curl rsz',
+            name: 'Arms Standing Barbell Curl',
+            level: 'Beginner'
+        },
+        
+    ]
     return (
         <div className='Main-container'>
             <div className='Exercise-container'>
@@ -12,7 +21,10 @@ const MainContainer = () => {
                     <h1>Fitness Strength Gym</h1>
                 </div>
 
-                <p>Today's exercise plan is: </p>
+                <div>
+                    <p>Today's exercise plan is: </p>
+                    <ExerciseList></ExerciseList>
+                </div>
             </div>
             <div className='Profile-container'>
                 <p>hello</p>
