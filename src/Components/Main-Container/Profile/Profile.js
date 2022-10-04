@@ -45,8 +45,8 @@ const Profile = () => {
             <div>
                 <h4>Today's Burning:  </h4>
                 <div className='total-time-container'>
-                    <p>Exercise time: <span>000</span>s</p>
-                    <p>Break tme: <span>000</span>s</p>
+                    <p>Exercise time: <span id='previous-exercise-time'>00</span>s</p>
+                    <p>Break tme: <span>00</span>s</p>
                 </div>
             </div>
             <button className='btn-complete'>Complete</button>

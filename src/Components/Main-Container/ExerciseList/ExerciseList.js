@@ -1,7 +1,8 @@
 import React from 'react';
 import './ExerciseList.css';
 
-const ExerciseList = ({ name, img, level, time, about }) => {
+const ExerciseList = ({id, name, img, level, time, about, DoExercise}) => {
+    
     return (
         <div className='Exercise'>
 
@@ -9,11 +10,14 @@ const ExerciseList = ({ name, img, level, time, about }) => {
 
 
             <div className='Excercise-info'>
-                <h3>{name}</h3>
-                <p>{about}</p>
-                <p>Level: {level} <span className='time'>Time: {time}s</span></p>
                 <div>
-                    <button className='btn-do'>
+                    <h3>{name}</h3>
+                    <p>{about}</p>
+                    <p>Level: {level} </p>
+                    <p >Exercise Time: <span>{time}</span>s</p>
+                </div>
+                <div>
+                    <button className='btn-do' onClick={()=>DoExercise(time)}>
                         Do It</button>
                 </div>
             </div>

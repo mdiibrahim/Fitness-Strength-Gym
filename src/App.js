@@ -14,23 +14,31 @@ function App() {
             .then(res => res.json())
             .then(data => setExercises(data))
     }, [])
+    const DoExercise = (time) => {
+      
+    console.log(time)
+    
+    }
     return (
         <div className='ExerciseList-container' >
             {
                 exercises.map(Exercise => <ExerciseList
+                    id={Exercise.id}
                     key={Exercise.id}
                     img={Exercise.img}
                     name={Exercise.name}
                     level={Exercise.level}
                     time={Exercise.time}
                     about={Exercise.about}
+                    DoExercise={DoExercise}
                 ></ExerciseList>)
             }
 
         </div>
 
     )
-}
+  }
+
   return (
     <div className="App">
       <div className='Main-container'>
@@ -51,5 +59,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

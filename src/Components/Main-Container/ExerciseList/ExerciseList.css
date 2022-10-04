@@ -10,9 +10,10 @@
     width: 100%;
     border-radius: 20px;
 }
-
-.time{
-    margin-left: 35px;
+.Excercise-info{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .btn-do {
     width: 100%;
