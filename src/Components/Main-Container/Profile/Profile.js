@@ -1,10 +1,43 @@
 import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
-import './Profile.css'
+import './Profile.css';
+import  { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Toast from 'react-bootstrap/Toast';
+
+function AutohideExample() {
+  const [show, setShow] = useState(false);
+
+  return (
+    <Row>
+      <Col xs={6}>
+        <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide>
+          <Toast.Header>
+            <img
+              src="holder.js/20x20?text=%20"
+              className="rounded me-2"
+              alt=""
+            />
+            <strong className="me-auto">Congratulations!!!</strong>
+          </Toast.Header>
+          <Toast.Body>Woohoo, you're great! You are finished today's exercise.</Toast.Body>
+        </Toast>
+      </Col>
+          <Col xs={6}>
+        <Button onClick={() => setShow(true)} className='btn-complete' >Finish</Button>
+      </Col>
+    </Row>
+  );
+}
+
+
 const Profile = ({TakeABreak}) => {
     return (
         <div className='profile'>
+            
             <div className='profile-name'>
                 <div>
                     <img className='profile-pic' src="profile.png" alt="" />
@@ -49,9 +82,9 @@ const Profile = ({TakeABreak}) => {
                     <p>Break tme: <span id='break-time'>00</span>s</p>
                 </div>
             </div>
-            <button className='btn-complete'>Complete</button>
+            <button ><AutohideExample></AutohideExample></button>
         </div>
     );
 };
 
-export default Profile;
+export  {Profile,AutohideExample};

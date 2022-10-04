@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import ExerciseList from './Components/Main-Container/ExerciseList/ExerciseList';
-import Profile from './Components/Main-Container/Profile/Profile';
+import {Profile} from './Components/Main-Container/Profile/Profile';
 
 
 function App() {
@@ -44,6 +44,7 @@ function App() {
     }
     const TakeABreak = (breakTime) => {
         document.getElementById('break-time').innerText = breakTime;
+        localStorage.setItem('breakTime', breakTime);
         
     }
 
