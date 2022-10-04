@@ -3,6 +3,7 @@ import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import './MainContainer.css'
 import ExerciseList from './ExerciseList/ExerciseList';
+import Profile from './Profile/Profile';
 
 const MainContainer = () => {
 
@@ -43,7 +44,7 @@ const MainContainer = () => {
                     <LoadExercises></LoadExercises>
             </div>
             <div className='Profile-container'>
-                <p>hello</p>
+                <Profile></Profile>
             </div>
         </div>
     );

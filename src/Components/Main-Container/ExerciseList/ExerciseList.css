@@ -1,3 +1,19 @@
+.Exercise {
+    background-color: floralwhite;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px whitesmoke;
+   
+}
+
+.Exercise img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.time{
+    margin-left: 35px;
+}
 .btn-do {
     width: 100%;
     font-size: 30px;
@@ -5,35 +21,11 @@
     border-radius: 10px;
     cursor: pointer;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
    
 }
-
 .btn-do:hover {
-    background-color: blanchedalmond;
+    background-color:goldenrod;
     border-color: cornsilk;
-}
-
-.Exercise {
-    background-color: floralwhite;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 10px 5px 5px whitesmoke;
-    position: relative;
-}
-
-.Exercise img {
-    width: 100%;
-    border-radius: 20px;
-}
-.Exercise-info{
-    margin: 0px 14px;
-}
-.Exercise-info p{
-    margin-bottom: 0px;
-    margin-top: 10px;
 }
 
 @media screen and (max-width: 576px) {

@@ -1,0 +1,55 @@
+.profile{
+    background-color: bisque;
+    position: sticky;
+    top: 5px;
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+.profile-pic{
+    width: auto;
+    height: 4em;
+}
+.profile-name{
+    display: flex;
+}
+.profile-contact{
+    background-color: aliceblue;
+    padding: 2px;
+    border-radius: 10px;
+}
+.break-time-container{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+.break-time-container button{
+    border-radius: 100px;
+    background-color: cyan;
+    padding: 5px;
+    text-align: center;
+    margin-right: 3px;
+    cursor: pointer;
+}
+.break-time-container button:hover {
+    background-color:goldenrod;
+    border-color: cornsilk;
+}
+.total-time-container{
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.btn-complete{
+    width: 100%;
+    font-size: 30px;
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+}
+.btn-complete:hover {
+    background-color:goldenrod;
+    border-color: cornsilk;
+}
