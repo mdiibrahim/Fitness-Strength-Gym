@@ -2,8 +2,6 @@ import React from 'react';
 import './ExerciseList.css';
 
 const ExerciseList = ({ name, img, level, time, about }) => {
-    console.log(time)
-
     return (
         <div className='Exercise'>
 
