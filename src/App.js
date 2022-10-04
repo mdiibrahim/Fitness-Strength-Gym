@@ -7,6 +7,7 @@ import Profile from './Components/Main-Container/Profile/Profile';
 
 
 function App() {
+    
     const LoadExercises = () => {
         const [exercises, setExercises] = useState([]);
         useEffect(() => {
@@ -20,6 +21,7 @@ function App() {
             const newExerciseTime = previousExerciseTime + time;
             document.getElementById('previous-exercise-time').innerText = newExerciseTime;
         }
+        
         return (
             <div className='ExerciseList-container' >
                 {
@@ -32,6 +34,7 @@ function App() {
                         time={Exercise.time}
                         about={Exercise.about}
                         DoExercise={DoExercise}
+                        
                     ></ExerciseList>)
                 }
 
@@ -39,9 +42,15 @@ function App() {
 
         )
     }
+    const TakeABreak = (breakTime) => {
+        document.getElementById('break-time').innerText = breakTime;
+        
+    }
 
     return (
+        
         <div className="App">
+            
             <div className='Main-container'>
                 <div className='Exercise-container'>
 
@@ -54,7 +63,8 @@ function App() {
                     <LoadExercises></LoadExercises>
                 </div>
                 <div className='Profile-container'>
-                    <Profile></Profile>
+               
+                    <Profile TakeABreak={TakeABreak}></Profile>
                 </div>
             </div>
         </div>

@@ -2,7 +2,7 @@ import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import './Profile.css'
-const Profile = () => {
+const Profile = ({TakeABreak}) => {
     return (
         <div className='profile'>
             <div className='profile-name'>
@@ -25,19 +25,19 @@ const Profile = () => {
             </div>
             <p>Take a break: </p>
             <div className='break-time-container'>
-                <button>
+                <button onClick={()=>TakeABreak(5)}>
                     <span>5</span>s
                 </button>
-                <button>
+                <button onClick={()=>TakeABreak(10)}>
                     <span>10</span>s
                 </button>
-                <button>
+                <button onClick={()=>TakeABreak(15)}>
                     <span>15</span>s
                 </button>
-                <button>
+                <button onClick={()=>TakeABreak(20)}>
                     <span>20</span>s
                 </button>
-                <button>
+                <button onClick={()=>TakeABreak(30)}>
                     <span>30</span>s
                 </button>
             </div>
@@ -46,7 +46,7 @@ const Profile = () => {
                 <h4>Today's Burning:  </h4>
                 <div className='total-time-container'>
                     <p>Exercise time: <span id='previous-exercise-time'>00</span>s</p>
-                    <p>Break tme: <span>00</span>s</p>
+                    <p>Break tme: <span id='break-time'>00</span>s</p>
                 </div>
             </div>
             <button className='btn-complete'>Complete</button>
