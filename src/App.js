@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDumbbell } from '@fortawesome/free-solid-svg-icons';
 import React, { useEffect, useState } from 'react';
 import ExerciseList from './Components/Main-Container/ExerciseList/ExerciseList';
-import {Profile} from './Components/Main-Container/Profile/Profile';
+import { Profile } from './Components/Main-Container/Profile/Profile';
+import Question from './Components/Question/Question';
 
 
 function App() {
-    
+
     const LoadExercises = () => {
         const [exercises, setExercises] = useState([]);
         useEffect(() => {
@@ -21,12 +22,12 @@ function App() {
             const newExerciseTime = previousExerciseTime + time;
             document.getElementById('previous-exercise-time').innerText = newExerciseTime;
         }
-        
+
         return (
             <div className='ExerciseList-container' >
                 {
                     exercises.map(Exercise => <ExerciseList
-                        id={Exercise.id}
+
                         key={Exercise.id}
                         img={Exercise.img}
                         name={Exercise.name}
@@ -34,7 +35,7 @@ function App() {
                         time={Exercise.time}
                         about={Exercise.about}
                         DoExercise={DoExercise}
-                        
+
                     ></ExerciseList>)
                 }
 
@@ -45,13 +46,13 @@ function App() {
     const TakeABreak = (breakTime) => {
         document.getElementById('break-time').innerText = breakTime;
         localStorage.setItem('breakTime', breakTime);
-        
+
     }
 
     return (
-        
+
         <div className="App">
-            
+
             <div className='Main-container'>
                 <div className='Exercise-container'>
 
@@ -64,10 +65,14 @@ function App() {
                     <LoadExercises></LoadExercises>
                 </div>
                 <div className='Profile-container'>
-               
+
                     <Profile TakeABreak={TakeABreak}></Profile>
                 </div>
             </div>
+            <div className='question-container'>
+                <Question></Question>
+            </div>
+
         </div>
     );
 }

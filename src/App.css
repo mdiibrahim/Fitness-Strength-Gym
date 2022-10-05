@@ -32,45 +32,81 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.Main-container{
+
+.Main-container {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  
+
 }
-.Exercise-container{
+
+.Exercise-container {
   margin: 50px;
 }
-.Title{
+
+.Title {
   display: flex;
   align-items: center;
   grid-gap: 20px;
   color: aquamarine;
 }
-.Title .Fw-icon{
+
+.Title .Fw-icon {
   font-size: 50px;
 }
-.ExerciseList-container{
+
+.ExerciseList-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   grid-row-gap: 40px;
 }
 
-@media screen and (max-width: 600px){
-  .ExerciseList-container{
-      display: grid;
-      width: 100vw;
-      grid-template-columns: 1fr;
-      
+@media screen and (max-width: 600px) {
+  .Main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .Exercise-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px;
+  }
+
+  .ExerciseList-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 40px;
+  }
+
+
+  .Profile-container {
+    display: grid;
+    grid-template-columns: 1fr
   }
 }
-@media screen and ( min-width: 601px) and  (max-width:1200px){
-  .ExerciseList-container{
-      display: grid;
-      grid-template-columns: 1fr 1fr;    
+
+@media screen and ((min-width: 601px) and (max-width:1200px)) {
+  .ExerciseList-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .Main-container {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+  }
+
+  .Exercise-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px;
   }
 }

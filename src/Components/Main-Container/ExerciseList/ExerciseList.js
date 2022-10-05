@@ -1,7 +1,7 @@
 import React from 'react';
 import './ExerciseList.css';
 
-const ExerciseList = ({id, name, img, level, time, about, DoExercise}) => {
+const ExerciseList = ({ name, img, level, time, about, DoExercise}) => {
     
     return (
         <div className='Exercise'>

@@ -31,6 +31,8 @@
 
 @media screen and (max-width: 576px) {
     .Exercise {
-        width: 100vw;
+        display: block;
+        width: 90%;
     }
+    
 }
