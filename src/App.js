@@ -45,9 +45,9 @@ function App() {
     }
     const TakeABreak = (breakTime) => {
         document.getElementById('break-time').innerText = breakTime;
-        localStorage.setItem('breakTime', breakTime);
-
+        localStorage.setItem('breakTime', JSON.stringify(breakTime));
     }
+    
 
     return (
 
