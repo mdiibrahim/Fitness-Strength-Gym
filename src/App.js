@@ -8,6 +8,9 @@ import Question from './Components/Question/Question';
 
 
 function App() {
+    const LS = () => {
+        
+    }
 
     const LoadExercises = () => {
         const [exercises, setExercises] = useState([]);
@@ -43,6 +46,16 @@ function App() {
 
         )
     }
+   
+        useEffect(() => {
+            const getBreakTime = localStorage.getItem('breakTime');
+            if (getBreakTime) {
+                
+                document.getElementById('break-time').innerText = getBreakTime;
+            }
+
+            
+        }, []);
     const TakeABreak = (breakTime) => {
         document.getElementById('break-time').innerText = breakTime;
         localStorage.setItem('breakTime', JSON.stringify(breakTime));
@@ -72,6 +85,7 @@ function App() {
             <div className='question-container'>
                 <Question></Question>
             </div>
+            <LS></LS>
 
         </div>
     );
