@@ -65,7 +65,13 @@
   grid-gap: 20px;
   grid-row-gap: 40px;
 }
+.question-container{
+  padding: 50px;
+  color:rgba(16, 55, 146, 0.93) ;
+}
 
+
+/* responsiveness */
 @media screen and (max-width: 600px) {
   .Main-container {
     display: grid;
